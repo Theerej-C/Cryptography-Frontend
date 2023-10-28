@@ -4,6 +4,8 @@ import { Navigate } from "react-router-dom";
 export default function DashBoard() {
   const [auth, setAuth] = useState(false);
   const userauth = localStorage.getItem("permission");
+  const a = 5;
+
   useEffect(() => {
     if (userauth) {
       setAuth(true);
